@@ -2,7 +2,6 @@
 {
     public enum LengthUnit
     {
-        Inches,
         Meters
     }
 }

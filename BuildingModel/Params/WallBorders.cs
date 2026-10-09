@@ -1,4 +1,4 @@
-using Structural_Automation.Utils.SystemParams;
+﻿using Structural_Automation.Utils.SystemParams;
 
 namespace Structural_Automation.BuildingModel.Params
 {
@@ -19,7 +19,6 @@ namespace Structural_Automation.BuildingModel.Params
         /// </summary>
         public double Top => unit switch
         {
-            LengthUnit.Inches => 12,
             LengthUnit.Meters => 1,
             _ => throw new ArgumentOutOfRangeException(nameof(unit), unit, "No default wall borders for this unit.")
         };
@@ -30,7 +29,6 @@ namespace Structural_Automation.BuildingModel.Params
         /// </summary>
         public double Bottom => unit switch
         {
-            LengthUnit.Inches => 0,
             LengthUnit.Meters => 0,
             _ => throw new ArgumentOutOfRangeException(nameof(unit), unit, "No default wall borders for this unit.")
         };
@@ -40,7 +38,6 @@ namespace Structural_Automation.BuildingModel.Params
         /// </summary>
         public double Side => unit switch
         {
-            LengthUnit.Inches => 12,
             LengthUnit.Meters => 1,
             _ => throw new ArgumentOutOfRangeException(nameof(unit), unit, "No default wall borders for this unit.")
         };
@@ -50,7 +47,6 @@ namespace Structural_Automation.BuildingModel.Params
         /// </summary>
         public double Middle => unit switch
         {
-            LengthUnit.Inches => 12,
             LengthUnit.Meters => 1,
             _ => throw new ArgumentOutOfRangeException(nameof(unit), unit, "No default wall borders for this unit.")
         };
