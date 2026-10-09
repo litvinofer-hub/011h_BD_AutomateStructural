@@ -1,0 +1,5 @@
+﻿<Solution>
+  <Project Path="AutoCadCommands/AutoCadCommands.csproj" />
+  <Project Path="BuildingModel/BuildingModel.csproj" />
+  <Project Path="Utils/Utils.csproj" />
+</Solution>
