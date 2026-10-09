@@ -1,4 +1,4 @@
-# Structural Automation
+﻿# Structural Automation
 
 ## Dependency tiers
 
@@ -24,6 +24,5 @@ This covers every class in `Utils.Geometry`. The tolerances themselves live in
 
 A `BuildingModel` element is an element of the building, so it compares by `Id`: two
 elements built over the same space are two elements, and one can be taken out without
-the other going with it. This covers `SubLevel`, `Level`, `Floor`, `Opening` and `Wall`.
-`Building` has an `Id` but compares by reference, and `WallBorders` is a set of
-parameters, not an element.
+the other going with it. This covers `SubLevel`, `Level`, `Floor` and `Wall`.
+`Building` has an `Id` but compares by reference.

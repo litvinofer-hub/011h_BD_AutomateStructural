@@ -2,11 +2,11 @@
 
 namespace Structural_Automation.BuildingModel
 {
-    public class Building(string name, Units units)
+    public class Building(string name, LengthUnit unit = LengthUnit.Meters)
     {
         public Guid Id { get; private set; } = Guid.NewGuid();
         public string Name { get; private set; } = name;
-        public Units Units { get; private set; } = units;
+        public Units Units { get; private set; } = new(unit);
 
         private readonly List<Level> _levels = [];
         private readonly List<Wall> _walls = [];
